@@ -3,7 +3,7 @@
 
 int main()
 {
-    gpio_t gasDetector, overTempDetector, alarmOffButton, alarmLED;
+    gpio_t gasDetector, overTempDetector, alarmOffButton, alarmLED; //Definicion de variables gpio_t
     //DigitalIn gasDetector(D2);
     gpio_init_in_ex(&gasDetector, D2, PullDown);
     gpio_init_in_ex(&overTempDetector, D3, PullDown);
