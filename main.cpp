@@ -26,6 +26,7 @@ int main()
 
         if ( gpio_read(&gasDetector) || gpio_read(&overTempDetector) ) {
             alarmState = ON;
+            printf("Gas detector ON");
         }
 
         alarmLed = alarmState;
